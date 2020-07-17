@@ -49,6 +49,15 @@ install-data-hook:
 	$(LN_S) dialog-warning.oga $(DESTDIR)$(sounddir)/window-attention.oga
 	-rm -f $(DESTDIR)$(sounddir)/window-question.oga
 	$(LN_S) dialog-warning.oga $(DESTDIR)$(sounddir)/window-question.oga
+	-rm -f $(DESTDIR)$(sounddir)/desktop-login.oga
+	$(LN_S) service-login.oga $(DESTDIR)$(sounddir)/desktop-login.oga
+	-rm -f $(DESTDIR)$(sounddir)/desktop-logout.oga
+	$(LN_S) service-logout.oga $(DESTDIR)$(sounddir)/desktop-logout.oga
+	-rm -f $(DESTDIR)$(sounddir)/system-ready.oga
+	$(LN_S) service-login.oga $(DESTDIR)$(sounddir)/system-ready.oga
+	-rm -f $(DESTDIR)$(sounddir)/system-shutdown.oga
+	$(LN_S) service-logout.oga $(DESTDIR)$(sounddir)/system-shutdown.oga
+
 
 EXTRA_DIST =            \
 	$(sound_DATA)	\
