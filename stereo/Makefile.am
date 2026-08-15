@@ -30,6 +30,7 @@ sound_DATA =                            \
 	service-logout.oga		\
 	suspend-error.oga		\
 	trash-empty.oga			\
+	trash-put.oga			\
 	$(NULL)
 
 install-data-hook:
