@@ -1,5 +1,7 @@
 index.theme
 *.tar.bz2
+build/
+_build/
 Makefile
 Makefile.in
 aclocal.m4
